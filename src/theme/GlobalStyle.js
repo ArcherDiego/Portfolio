@@ -10,8 +10,8 @@ const GlobalStyle = createGlobalStyle`
         height: 100%;
         line-height: 1.5;
         font-family: ${({theme}) => theme.fontFamily.main};
-        background-color: ${({theme}) => theme.lightsOn.backgroundColor};
-        color: ${({theme}) => theme.lightsOn.color};
+        background-color: ${({theme}) => theme.backgroundColor};
+        color: ${({theme}) => theme.fontColor};
     }
 
     h1, h2, h3, h4, h5 {
@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
 
     a {
         text-decoration: none;
-        color: ${({theme}) => theme.lightsOn.color};
+        color: ${({theme}) => theme.fontColor};
     }
 
     img, picture, video, canvas, svg {

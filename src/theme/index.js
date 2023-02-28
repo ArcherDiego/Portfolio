@@ -10,36 +10,35 @@ const fontSize = {
     sm: "1.5rem",
 }
 
-const lightsOn = {
-    backgroundColor: "#eee",
-    color: "#000",
-    secundColor: "#2c9959",
-}
-
-const neumorphismLightOn = {
-    borderRadius: "10px",
-    background: "linear-gradient(145deg, #d6d6d6, #ffffff)",
-    boxShadow: "5px 5px 10px #818181,-5px -5px 10px #ffffff",
-}
-
-const lightsOff = {
-    backgroundColor: "#0F0F0F",
-    color: "#FFF",
-    secundColor: "#00c853",
-}
-
 const container = {
     marginTop: "5%",
     marginLeft: "35%",
 }
 
-const theme = {
+export const lightTheme = {
     fontFamily,
     fontSize,
-    lightsOn,
-    neumorphismLightOn,
-    lightsOff,
-    container
+    container,
+    backgroundColor: "#eeeeee",
+    fontColor: "#000",
+    color: "#2c9959",
+    neumorphism : {
+        borderRadius: "10px",
+        background: "linear-gradient(145deg, #d6d6d6, #ffffff)",
+        boxShadow: "5px 5px 10px #818181,-5px -5px 10px #ffffff",
+    }
 }
 
-export default theme
+export const darkTheme = {
+    fontFamily,
+    fontSize,
+    container,
+    backgroundColor: "#0F0F0F",
+    fontColor: "#FFF",
+    color: "#00c853",
+    neumorphism : {
+        borderRadius: "10px",
+        background: "linear-gradient(145deg, #1f1f1f, #242424)",
+        boxShadow: "5px 5px 10px #121212, -5px -5px 10px #323232"
+    }
+}

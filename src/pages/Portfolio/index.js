@@ -4,10 +4,10 @@ import Skills from "../My Skills"
 import Contact from "../Contact"
 import Nav from "../../components/Navigation"
 
-const Portfolio = () => {
+const Portfolio = ({theme, setTheme}) => {
     return (
         <>
-            <Nav />
+            <Nav theme={theme} setTheme={setTheme} />
             <About />
             <Projects />
             <Skills />

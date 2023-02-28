@@ -1,28 +1,26 @@
-import About from "../../pages/About"
-import Contact from "../../pages/Contact"
-import Skills from "../../pages/My Skills"
-import Projects from "../../pages/Projects"
+import React from "react"
 import ToggleBtn from "../ToggleBtn"
 
 import NavStyle from "./style"
 
-const Nav = () => {
+const Nav = ({theme, setTheme}) => {
     const handleClick = () => {
-        console.log('koé')
+        theme === "light" ? setTheme('dark') : setTheme('light')
     }
 
     return (
         <NavStyle>
-            <img src="#" alt="profile" />
+            <img src={ require("../../assets/images/pic.jpg")} alt="profile" />
             <section>
                 <h2>&lt;Diego /&gt;</h2>
+                <button onClick={handleClick}></button>
                 <ToggleBtn toggled={ false } onClick={ handleClick } />
             </section>
             <ul>
-                <li><a href={<About />}>Sobre mim</a></li>
-                <li><a href={<Projects />}>Projetos</a></li>
-                <li><a href={<Skills />}>Minhas Skills</a></li>
-                <li><a href={<Contact />}>Contato</a></li>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#skills">Minhas Skills</a></li>
+                <li><a href="#contact">Contato</a></li>
             </ul>
         </NavStyle>
     )

@@ -19,7 +19,7 @@ const ToggleBtnStyle = styled.label`
         left: 0;
         right: 0;
         bottom: 0;
-        background: ${({theme}) => theme.lightsOn.secundColor};
+        background: ${({theme}) => theme.color};
         transition: 0.3s;
         border-radius: 30px;
     }
@@ -37,7 +37,7 @@ const ToggleBtnStyle = styled.label`
     }
 
     input:checked + span {
-        background-color: ${({theme}) => theme.lightsOff.secundColor};
+        background-color: ${({theme}) => theme.color};
     }
 
     input:checked + span:before {

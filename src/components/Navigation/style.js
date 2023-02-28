@@ -5,7 +5,7 @@ const NavStyle = styled.nav`
     padding: 20px;
     width: 25%;
     height: 85%;
-    background-color: ${({theme}) => theme.lightsOn.backgroundColor};
+    background-color: ${({theme}) => theme.backgroundColor};
     position: fixed;
     border-radius: 10px;
     background: linear-gradient(145deg, #d6d6d6, #ffffff);
@@ -17,8 +17,14 @@ const NavStyle = styled.nav`
     justify-content: center;
     font-size: ${({theme}) => theme.fontSize.sm};
 
+    img {
+        width: 50%;
+        border: 5px solid ${({theme}) => theme.color};
+        border-radius: 50%;
+    }
+
     h2 {
-        color: ${({theme}) => theme.lightsOn.secundColor};
+        color: ${({themes}) => themes.fontColor};
     }
 
     section {
