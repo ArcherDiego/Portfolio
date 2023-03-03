@@ -8,7 +8,11 @@ const AboutStyle = styled.div`
     section {
         padding: 15px;
         width: 100%;
-        ${({themes}) => themes.neumorphism}
+        ${({theme}) => theme.neumorphism}
+    }
+
+    p {
+        padding-bottom: 0.5rem;
     }
 
     img, a {

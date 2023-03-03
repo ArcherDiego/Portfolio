@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const NavStyle = styled.nav`
+    ${({theme}) => theme.neumorphism};
     margin: 0% 5%;
     padding: 20px;
     width: 25%;
@@ -8,9 +9,6 @@ const NavStyle = styled.nav`
     background-color: ${({theme}) => theme.backgroundColor};
     position: fixed;
     border-radius: 10px;
-    background: linear-gradient(145deg, #d6d6d6, #ffffff);
-    box-shadow:  5px 5px 10px #818181,
-                -5px -5px 10px #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,7 +22,7 @@ const NavStyle = styled.nav`
     }
 
     h2 {
-        color: ${({themes}) => themes.fontColor};
+        color: ${({theme}) => theme.color};
     }
 
     section {

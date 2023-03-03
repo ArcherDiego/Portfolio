@@ -13,11 +13,11 @@ const ProjectsStyle = styled.section`
         margin: 2.5%;
         padding: 15px;
         width: 47.5%;
-        ${({theme}) => theme.neumorphism}
+        ${({theme}) => theme.neumorphism};
     }
 
     h1 {
-        color: ${({theme}) => theme.color};
+        color: ${({theme}) => theme.fontColor};
         font-size: ${({theme}) => theme.fontSize.md};
     }
 `;

@@ -13,7 +13,6 @@ const Nav = ({theme, setTheme}) => {
             <img src={ require("../../assets/images/pic.jpg")} alt="profile" />
             <section>
                 <h2>&lt;Diego /&gt;</h2>
-                <button onClick={handleClick}></button>
                 <ToggleBtn toggled={ false } onClick={ handleClick } />
             </section>
             <ul>

@@ -24,8 +24,8 @@ export const lightTheme = {
     color: "#2c9959",
     neumorphism : {
         borderRadius: "10px",
-        background: "linear-gradient(145deg, #d6d6d6, #ffffff)",
-        boxShadow: "5px 5px 10px #818181,-5px -5px 10px #ffffff",
+        background: "#D9D9D9",
+        boxShadow:  "5px 5px 7px #575757, -5px -5px 7px #ffffff",
     }
 }
 
@@ -33,12 +33,12 @@ export const darkTheme = {
     fontFamily,
     fontSize,
     container,
-    backgroundColor: "#0F0F0F",
-    fontColor: "#FFF",
+    backgroundColor: "#2b2727",
+    fontColor: "#eeeeee",
     color: "#00c853",
     neumorphism : {
         borderRadius: "10px",
-        background: "linear-gradient(145deg, #1f1f1f, #242424)",
-        boxShadow: "5px 5px 10px #121212, -5px -5px 10px #323232"
+        background: "#2b2727",
+        boxShadow:  "5px 5px 7px #111010, -5px -5px 7px #453e3e",
     }
 }

@@ -15,10 +15,7 @@ const SkillsStyle = styled.section`
         margin: 2.5%;
         padding: 15px;
         width: 20%;
-        border-radius: 10px;
-        background: #D9D9D9;
-        box-shadow:  5px 5px 7px #575757,
-                    -5px -5px 7px #ffffff;
+        ${({theme}) => theme.neumorphism};
     }
 
     img {

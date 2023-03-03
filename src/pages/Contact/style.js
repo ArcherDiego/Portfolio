@@ -3,7 +3,7 @@ import styled from "styled-components";
 const ContactStyle = styled.section`
     ${({theme}) => theme.container};
     width: 60%;
-    margin-bottom: 5%;
+    margin-bottom: 2.5%;
 
     section {
         display: flex;
@@ -11,26 +11,23 @@ const ContactStyle = styled.section`
         align-items: center;
         padding: 15px;
         width: 100%;
-        ${({theme}) => theme.neumorphism}
+        ${({theme}) => theme.neumorphism};
     }
 
     a {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 18%;
 
         p {
-            padding: 5px;
+            font-size: .75rem;
         }
     }
 
-    a:hover {
-        text-decoration: underline;
-    }
-
     svg {
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
     }
 `;
 
