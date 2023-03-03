@@ -6,6 +6,10 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
         height: 100%;
         line-height: 1.5;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 const SkillsStyle = styled.section`
     ${({theme}) => theme.container};
     width: 60%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 
     div {
         display: flex;
@@ -23,7 +23,6 @@ const SkillsStyle = styled.section`
     }
 
     h1 {
-        color: ${({theme}) => theme.fontColor};
         font-size: ${({theme}) => theme.fontSize.md};
     }
 `;

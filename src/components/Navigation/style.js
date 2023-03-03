@@ -32,14 +32,24 @@ const NavStyle = styled.nav`
         justify-content: space-around;
     }
 
-    li {
-        padding-top: 25px;
-        text-align: center;
+    ul {
+        height: 60%;
+
+        li {
+            padding-top: 20px;
+            text-align: center;
+        }
     }
 
-    li:hover {
+    a {
+        transition: 0.6s;
+    }
+
+    a:hover {
+        color: ${({theme}) => theme.color};
         text-decoration: underline;
-        transition: 0.2s;
+        font-size: larger;
+        transition: 0.4s;
     }
 `;
 

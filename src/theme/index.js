@@ -1,6 +1,6 @@
 const fontFamily = {
-    title: "Tilt Warp, cursive",
-    main:"Libre Baskerville, serif",
+    title: "'Tilt Neon', cursive",
+    main: "'Tilt Neon', cursive",
 }
 
 const fontSize = {
@@ -38,7 +38,7 @@ export const darkTheme = {
     color: "#00c853",
     neumorphism : {
         borderRadius: "10px",
-        background: "#2b2727",
-        boxShadow:  "5px 5px 7px #111010, -5px -5px 7px #453e3e",
+        background: "#322f2f",
+        boxShadow:  "5px 5px 30px #111010, -5px -5px 30px #453e3e",
     }
 }

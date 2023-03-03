@@ -17,7 +17,6 @@ const ProjectsStyle = styled.section`
     }
 
     h1 {
-        color: ${({theme}) => theme.fontColor};
         font-size: ${({theme}) => theme.fontSize.md};
     }
 `;
