@@ -16,6 +16,12 @@ const SkillsStyle = styled.section`
         padding: 15px;
         width: 20%;
         ${({theme}) => theme.neumorphism};
+        transition: .5s;
+    }
+
+    section:hover {
+        transform: scale(1.1);
+        transition: .5s;
     }
 
     img {

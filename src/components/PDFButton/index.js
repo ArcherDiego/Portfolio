@@ -4,8 +4,10 @@ import PDFStyle from "./style"
 
 const PDFButton = () => {
     return (
-        <PDFStyle href={Curriculo} target="_blank" rel="noreferrer" download>
-            <img src={ require("../../assets/images/pdf-icon.png")} alt="Currículo" />
+        <PDFStyle>
+            <a href={Curriculo} target="_blank" rel="noreferrer" download>
+                <img src={ require("../../assets/images/pdf-icon.png")} alt="Currículo" />
+            </a>
         </PDFStyle>
     )
 }
