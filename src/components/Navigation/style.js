@@ -51,6 +51,30 @@ const NavStyle = styled.nav`
         font-size: larger;
         transition: 0.4s;
     }
+
+    @media screen and (max-width: 480px) {
+        flex-direction: row;
+        margin: 5%;
+        width: 100%;
+        height: 7.5rem;
+
+        section {
+            padding: 5px;
+            flex-direction: column;
+        }
+
+        img {
+            display: none;
+        }
+
+        ul {
+            background-color: ${({theme}) => theme.neumorphism};
+            height: auto;
+            top: 2rem;
+            right: 2rem;
+            padding: 5px;
+        }
+    }
 `;
 
 export default NavStyle

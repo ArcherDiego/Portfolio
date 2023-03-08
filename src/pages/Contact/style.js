@@ -19,6 +19,7 @@ const ContactStyle = styled.section`
         flex-direction: column;
         align-items: center;
         width: 18%;
+        transition: .5s;
 
         p {
             font-size: .75rem;
@@ -26,6 +27,8 @@ const ContactStyle = styled.section`
     }
 
     a:hover {
+        transform: scale(1.1);
+        transition: .5s;
         animation-name: sparkle;
         animation-duration: 2s;
         animation-iteration-count: infinite;
