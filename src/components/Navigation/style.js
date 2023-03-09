@@ -48,7 +48,8 @@ const NavStyle = styled.nav`
     a:hover {
         color: ${({theme}) => theme.color};
         text-decoration: underline;
-        font-size: larger;
+        text-underline-offset: 7px;
+        text-decoration-thickness: 3px;
         transition: 0.4s;
     }
 

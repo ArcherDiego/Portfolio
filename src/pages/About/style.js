@@ -25,7 +25,7 @@ const AboutStyle = styled.div`
         align-items: center;
 
         h1 {
-            margin-top: 20%;
+            margin-top: 40%;
         }
     }
 `;

@@ -6,11 +6,9 @@ const HamburgerStyle = styled.div`
     padding: 10px;
     width: 90%;
     justify-content: space-between;
-    align-items: center;
 
     section {
         display: flex;
-        flex-direction: column;
         align-items: center;
     }
 
@@ -27,14 +25,15 @@ const HamburgerStyle = styled.div`
     }
 
     h2 {
-            color: ${({theme}) => theme.color};
-            font-size: ${({theme}) => theme.fontSize.bg};
+        padding-right: 50px;
+        color: ${({theme}) => theme.color};
+        font-size: ${({theme}) => theme.fontSize.bg};
     }
 
     svg {
-        width: 50px;
-        height: 50px;
-        fill: ${({theme}) => theme.color};
+        height: 35px;
+        width: 35px;
+        fill: ${({theme}) => theme.fontColor};
     }
 
     @media (min-width: 480px) {
