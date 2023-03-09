@@ -19,6 +19,23 @@ const ProjectsStyle = styled.section`
     h1 {
         font-size: ${({theme}) => theme.fontSize.md};
     }
+
+    @media (max-width: 480px) {
+        margin: 15% 5%;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        section {
+            width: auto;
+        }
+
+        div {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 `;
 
 export default ProjectsStyle

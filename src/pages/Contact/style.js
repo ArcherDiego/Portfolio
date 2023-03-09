@@ -43,6 +43,18 @@ const ContactStyle = styled.section`
         from {color: ${({theme}) => theme.color}}
         to {color: ${({theme}) => theme.fontColor}}
     }
+
+    @media (max-width: 480px) {
+        margin: 15% 5%;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h4, p {
+            display: none;
+        }
+    }
 `;
 
 export default ContactStyle

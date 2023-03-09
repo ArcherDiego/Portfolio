@@ -31,6 +31,24 @@ const SkillsStyle = styled.section`
     h1 {
         font-size: ${({theme}) => theme.fontSize.md};
     }
+
+    @media (max-width: 480px) {
+        margin: 15% 5%;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        div {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section {
+            margin: 7.5%;
+            width: 100%;
+        }
+    }
 `;
 
 export default SkillsStyle

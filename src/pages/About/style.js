@@ -16,6 +16,18 @@ const AboutStyle = styled.div`
         padding-bottom: 0.5rem;
         text-align: justify;
     }
+
+    @media (max-width: 480px) {
+        margin: 0 5%;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            margin-top: 20%;
+        }
+    }
 `;
 
 export default AboutStyle

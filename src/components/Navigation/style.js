@@ -52,7 +52,7 @@ const NavStyle = styled.nav`
         transition: 0.4s;
     }
 
-    @media screen and (max-width: 480px) {
+    @media (max-width: 480px) {
         flex-direction: row;
         margin: 5%;
         width: 100%;
@@ -66,14 +66,10 @@ const NavStyle = styled.nav`
         img {
             display: none;
         }
+    }
 
-        ul {
-            background-color: ${({theme}) => theme.neumorphism};
-            height: auto;
-            top: 2rem;
-            right: 2rem;
-            padding: 5px;
-        }
+    @media (max-width: 480px) {
+        display: none;
     }
 `;
 
